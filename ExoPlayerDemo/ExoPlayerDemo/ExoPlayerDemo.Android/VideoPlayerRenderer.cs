@@ -48,9 +48,7 @@ namespace ExoPlayerDemo.Droid
         {
             Handler emptyHandler = new Handler(message => { });
             DefaultHttpDataSourceFactory httpDataSourceFactory = new DefaultHttpDataSourceFactory("1");
-            //DefaultDashChunkSource.Factory chunkFactory = new DefaultDashChunkSource.Factory(httpDataSourceFactory);
             DefaultSsChunkSource.Factory factory = new DefaultSsChunkSource.Factory(httpDataSourceFactory);
-            //DashMediaSource dashMediaSource = new DashMediaSource(Uri.Parse(Element.SourceUrl), httpDataSourceFactory, chunkFactory, emptyHandler, this);
             SsMediaSource ssMediaSource = new SsMediaSource(Uri.Parse(Element.SourceUrl), httpDataSourceFactory, factory, emptyHandler, this);
 
             _player.Prepare(ssMediaSource);
