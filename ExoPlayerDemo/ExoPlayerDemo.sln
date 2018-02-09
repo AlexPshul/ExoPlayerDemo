@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExoPlayerDemo.Android", "ExoPlayerDemo\ExoPlayerDemo.Android\ExoPlayerDemo.Android.csproj", "{DE3CD090-536E-415C-A5A0-1F54FF2C52AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExoPlayerDemo", "ExoPlayerDemo\ExoPlayerDemo\ExoPlayerDemo.csproj", "{EEB146BC-4E56-4F74-A6B2-64CFD0BC2670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE3CD090-536E-415C-A5A0-1F54FF2C52AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3CD090-536E-415C-A5A0-1F54FF2C52AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3CD090-536E-415C-A5A0-1F54FF2C52AD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DE3CD090-536E-415C-A5A0-1F54FF2C52AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3CD090-536E-415C-A5A0-1F54FF2C52AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE3CD090-536E-415C-A5A0-1F54FF2C52AD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EEB146BC-4E56-4F74-A6B2-64CFD0BC2670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB146BC-4E56-4F74-A6B2-64CFD0BC2670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB146BC-4E56-4F74-A6B2-64CFD0BC2670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB146BC-4E56-4F74-A6B2-64CFD0BC2670}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F880DE0-DCB1-431C-B5EF-49D60AD80EDE}
+	EndGlobalSection
+EndGlobal
