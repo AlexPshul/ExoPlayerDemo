@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:ExoPlayerDemo"
              x:Class="ExoPlayerDemo.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <!-- Azure Media Services Sample -->
+    <!-- Read more at http://playready.azurewebsites.net/Home/AdaptiveTests -->
+    <local:VideoPlayer SourceUrl="http://amssamples.streaming.mediaservices.windows.net/683f7e47-bd83-4427-b0a3-26a6c4547782/BigBuckBunny.ism/manifest"/>
 
 </ContentPage>
