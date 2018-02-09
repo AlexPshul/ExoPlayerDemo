@@ -46,11 +46,12 @@ namespace ExoPlayerDemo.Droid
 
         private void Play()
         {
-            Handler emptyHandler = new Handler(message => { });
+            Uri sourceUri = Uri.Parse(Element.SourceUrl);
             DefaultHttpDataSourceFactory httpDataSourceFactory = new DefaultHttpDataSourceFactory("1");
-            DefaultSsChunkSource.Factory factory = new DefaultSsChunkSource.Factory(httpDataSourceFactory);
-            SsMediaSource ssMediaSource = new SsMediaSource(Uri.Parse(Element.SourceUrl), httpDataSourceFactory, factory, emptyHandler, this);
+            DefaultSsChunkSource.Factory ssChunkFactory = new DefaultSsChunkSource.Factory(httpDataSourceFactory);
+            Handler emptyHandler = new Handler();
 
+            SsMediaSource ssMediaSource = new SsMediaSource(sourceUri, httpDataSourceFactory, ssChunkFactory, emptyHandler, this);
             _player.Prepare(ssMediaSource);
         }
 
